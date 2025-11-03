@@ -72,7 +72,7 @@ function renderPlaces(places) {
 
 AFRAME.registerComponent('cursor-listener', {
   init: function () {
-    this.el.addEventListener('touchstart', function (evt) {
+    this.el.addEventListener('click', function (evt) {
         document.getElementById("clickStateStatus").innerHTML = evt;
     });
   }
