@@ -20,13 +20,21 @@
 
 <body>    
     <div id="startScreen">
-        <h1>CLICK MATERIAL</h1>
+        <h1>ALIGN&CLICK TO OPEN</h1>
         <button onclick="startAR()">Start</button>
+        <button onclick="openVideo()">Video</button>
     </div>
     <!-- <img id="ar-frame" src="./assets/frame.png"></img> -->
     <div id="gpsPosition">GPS: <span id="long">0.00</span>, <span id="lat">0.00</span></div>
     <div id="clickState">Click: <span id="clickStateStatus">...</span></div>
-    
+
+    <div id="videoScreen">
+        <video width="480" height="640" autoplay muted loop>
+            <source src="/assets/video/footscray.mp4" type="video/mp4">
+        </video>
+        <button onclick="closeVideo()">Close</button>
+    </div>
+
     <a-scene
         vr-mode-ui="enabled: false"
         arjs='sourceType: webcam; videoTexture: true; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'
@@ -38,12 +46,13 @@
         <a-entity position="0 0 0">
             <a-camera far="30" arjs-device-orientation-controls='smoothingFactor: 0.1' look-controls-enabled='false' gps-new-camera='gpsTimeInterval: 3000; gpsMinDistance: 5' rotation-reader mouse-cursor wasd-controls>
                 <a-entity 
-                        animation__click="property: material.color; startEvents: click; easing: easeInCubic; dur: 120; from: black; to: yellow"
-                        animation__mouseleave="property: material.color; startEvents: mouseleave; easing: easeInCubic; dur: 500; from: yellow; to: black"
+                        animation__mouseenter="property: material.color; startEvents: mouseenter; easing: easeInCubic; dur: 500; to: green"
+                        animation__click="property: material.color; startEvents: click; easing: easeInCubic; dur: 250; to: red"
+                        animation__mouseleave="property: material.color; startEvents: mouseleave; easing: easeInCubic; dur: 500; to: white"
                         cursor="fuse: false; fuseTimeout: 500"
                         position="0 0 -1"
                         geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
-                        material="color: black; shader: flat">
+                        material="color: white; shader: flat">
                 </a-entity>       
             </a-camera>
         </a-entity>

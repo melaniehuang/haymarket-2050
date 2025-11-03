@@ -74,6 +74,7 @@ AFRAME.registerComponent('cursor-listener', {
   init: function () {
     this.el.addEventListener('click', function (evt) {
         document.getElementById("clickStateStatus").innerHTML = evt;
+        openVideo();
     });
   }
 });
@@ -81,4 +82,12 @@ AFRAME.registerComponent('cursor-listener', {
 
 function startAR(){
     document.getElementById("startScreen").style.display = 'none';
+}
+
+function openVideo(){
+    document.getElementById("videoScreen").style.display = 'flex';
+}
+
+function closeVideo(){
+    document.getElementById("videoScreen").style.display = 'none';
 }
