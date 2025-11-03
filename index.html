@@ -20,7 +20,7 @@
 
 <body>    
     <div id="startScreen">
-        <h1>Touch 1</h1>
+        <h1>Auto-touch</h1>
         <button onclick="startAR()">Start</button>
     </div>
     <!-- <img id="ar-frame" src="./assets/frame.png"></img> -->
@@ -37,10 +37,12 @@
         
         <a-entity position="0 0 0">
             <a-camera far="30" arjs-device-orientation-controls='smoothingFactor: 0.1' look-controls-enabled='false' gps-new-camera='gpsTimeInterval: 3000; gpsMinDistance: 5' rotation-reader mouse-cursor wasd-controls>
-                <a-entity cursor="fuse: true; fuseTimeout: 500"
-                            position="0 0 -1"
-                            geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
-                            material="color: black; shader: flat">
+                <a-entity 
+                        animation__click="property: scale; startEvents: click; easing: easeInCubic; dur: 30; from: 0.1 0.1 0.1; to: 1 1 1"
+                        cursor="fuse: true; fuseTimeout: 500"
+                        position="0 0 -1"
+                        geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
+                        material="color: black; shader: flat">
                 </a-entity>       
             </a-camera>
         </a-entity>
