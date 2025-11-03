@@ -61,7 +61,8 @@ function renderPlaces(places) {
         model.setAttribute('radius', '2');
         model.setAttribute('position', '0 0 0');
         model.setAttribute('animation', "property: rotation; to: 0 360 0; dur: 8000; easing: linear; loop: true");
-        // model.setAttribute('cursor-listener','');
+        model.setAttribute('cursor-listener','');
+        
         model.setAttribute('event-set__click','_event: click; scale: 3 1 1');
         model.addEventListener('loaded', () => {
             window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))
@@ -71,17 +72,14 @@ function renderPlaces(places) {
     });
 }
 
-// AFRAME.registerComponent('cursor-listener', {
-//   init: function () {
-//     var lastIndex = -1;
-//     var COLORS = ['red', 'green', 'blue'];
-//     this.el.addEventListener('click', function (evt) {
-//       lastIndex = (lastIndex + 1) % COLORS.length;
-//       this.setAttribute('material', 'color', COLORS[lastIndex]);
-//       console.log('I was clicked at: ', evt.detail.intersection.point);
-//     });
-//   }
-// });
+AFRAME.registerComponent('cursor-listener', {
+  init: function () {
+    this.el.addEventListener('touchstart', function (evt) {
+        document.getElementById("clickStateStatus").innerHTML = evt;
+    });
+  }
+});
+
 
 function startAR(){
     document.getElementById("startScreen").style.display = 'none';
