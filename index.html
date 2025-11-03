@@ -20,7 +20,7 @@
 
 <body>    
     <div id="startScreen">
-        <h1>ALIGN&CLICK 5</h1>
+        <h1>ALIGN&CLICK 6</h1>
         <button onclick="startAR()">Start</button>
         <button onclick="openVideo()">Video</button>
     </div>
@@ -46,13 +46,13 @@
         <a-entity position="0 0 0">
             <a-camera far="30" arjs-device-orientation-controls='smoothingFactor: 0.1' look-controls-enabled='false' gps-new-camera='gpsTimeInterval: 3000; gpsMinDistance: 5' rotation-reader mouse-cursor wasd-controls>
                 <a-entity 
-                        animation__mouseenter="property: material.color; startEvents: mouseenter; type: color; easing: easeInCubic; dur: 500; from: white; to: green"
-                        animation__click="property: material.color; startEvents: click; type: color; easing: easeInCubic; dur: 250; to: red"
-                        animation__mouseleave="property: material.color; startEvents: mouseleave; type: color; easing: easeInCubic; dur: 500; from: green; to: white"
+                        animation__mouseenter="property: material.color; type: color; easing: easeInCubic; from: white; to: green; startEvents: mouseenter; dur: 500"
+                        animation__click="property: material.color; type: color; easing: easeInCubic; to: red; startEvents: click; dur: 500"
+                        animation__mouseleave="property: material.color; type: color; easing: easeInCubic; from: green; to: white; startEvents: mouseleave; dur: 500"
                         cursor="fuse: false; fuseTimeout: 500"
                         position="0 0 -1"
                         geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
-                        material="color: white; shader: flat">
+                        material="color: blue; shader: flat">
                 </a-entity>       
             </a-camera>
         </a-entity>
