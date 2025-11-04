@@ -54,6 +54,7 @@ function renderPlaces(places) {
         model.setAttribute('gps-new-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
         model.setAttribute('src', './assets/magnemite/textures/TCom_Gore_2K_albedo.jpg');
         model.setAttribute('name', place.name);
+        model.setAttribute('videoSrc', './assets/video/' + place.name + '.mp4');
         model.setAttribute('repeat', '2 2');
         model.setAttribute('normal-map', '#gore-NRM');
         model.setAttribute('normal-texture-repeat', '2 2');
@@ -75,13 +76,13 @@ AFRAME.registerComponent('cursor-listener', {
   init: function () {
         this.el.addEventListener('click', function (evt) {
             var elementClicked = evt.target;
-            console.log(elementClicked.getAttribute('name'));
-            // var cursor = document.querySelector('a-cursor');
-            // var elToWatch = document.querySelector('a-sphere[name=position-1]')
-            // var intersection = cursor.components.raycaster.getIntersection(elToWatch);
+            
+            if (elementClicked.getAttribute('name') == 'position-2'){
+                document.getElementById("videoSrc").src = elementClicked.getAttribute('videoSrc');
+                openMedia('videoScreen');
+            }
 
             document.getElementById("clickStateStatus").innerHTML = elementClicked.getAttribute('name');
-            openMedia('videoScreen');
         });
     }
 });
