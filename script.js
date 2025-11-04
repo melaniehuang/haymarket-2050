@@ -53,6 +53,7 @@ function renderPlaces(places) {
         let model = document.createElement('a-sphere');
         model.setAttribute('gps-new-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
         model.setAttribute('src', './assets/magnemite/textures/TCom_Gore_2K_albedo.jpg');
+        model.setAttribute('name', place.name);
         model.setAttribute('repeat', '2 2');
         model.setAttribute('normal-map', '#gore-NRM');
         model.setAttribute('normal-texture-repeat', '2 2');
