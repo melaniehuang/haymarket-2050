@@ -73,7 +73,7 @@ function renderPlaces(places) {
 AFRAME.registerComponent('cursor-listener', {
   init: function () {
     this.el.addEventListener('click', function (evt) {
-        document.getElementById("clickStateStatus").innerHTML = Object.keys(evt.details);
+        document.getElementById("clickStateStatus").innerHTML = Object.keys(evt);
         openMedia('videoScreen');
     });
   }
