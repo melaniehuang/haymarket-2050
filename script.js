@@ -22,8 +22,8 @@ function staticLoadPlaces() {
         {
             name: 'position-1',
             location: {
-                lat: -37.6982281933199,
-                lng: 145.02264958232703,
+                lat: -37.698897482821900,
+                lng: 145.02287763502800,
             },
             color: 'red'
         }, {
@@ -74,10 +74,7 @@ function renderPlaces(places) {
 AFRAME.registerComponent('cursor-listener', {
   init: function () {
     this.el.addEventListener('click', function (evt) {
-        var cursor = document.querySelector('[cursor]');
-        var elToWatch = document.querySelector('[position-2]')
-        var intersection = cursor.components.raycaster.getIntersection(elToWatch);
-        document.getElementById("clickStateStatus").innerHTML += Object.keys(intersection);
+        document.getElementById("clickStateStatus").innerHTML += evt.detail.intersection.object.uuid;
         openMedia('videoScreen');
     });
   }
