@@ -35,6 +35,22 @@ body {
     z-index:2;    
 }
 
+#mapScreen {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width:100vw;
+    height:100vh;
+    position:absolute;
+    top:0;
+    left:0;
+    background-color: red;
+    color: white;
+    text-align:center;
+    z-index:2;    
+}
+
 #ar-frame {
     width:100vw;
     height:100vh;

@@ -22,7 +22,7 @@
     <div id="startScreen">
         <h1>HAYMARKET 2050</h1>
         <button onclick="startAR()">Start</button>
-        <button onclick="openVideo()">Video</button>
+        <button onclick="openMedia('mapScreen')">View Map</button>
     </div>
     <!-- <img id="ar-frame" src="./assets/frame.png"></img> -->
     <div id="gpsPosition">GPS: <span id="long">0.00</span>, <span id="lat">0.00</span></div>
@@ -32,7 +32,12 @@
         <video width="480" height="640" autoplay muted loop>
             <source src="./assets/video/footscray.mp4" type="video/mp4">
         </video>
-        <button onclick="closeVideo()">Close</button>
+        <button onclick="closeMedia('videoScreen')">Close</button>
+    </div>
+
+    <div id="mapScreen">
+        <iframe width='400px' height='600px' src="https://api.mapbox.com/styles/v1/mhuang1/cmhjt6ov500ex01rgdyjl4upa.html?title=false&access_token=pk.eyJ1IjoibWh1YW5nMSIsImEiOiJjajR5MDB4cHExbnJjMnducnp1NGo5b3k2In0.Mlghzw-tZNTl5E9BigSjmA&zoomwheel=false#15.75/-33.881185/151.205298" title="Haymarket" style="border:none;"></iframe>
+        <button onclick="closeMedia('mapScreen')">Close</button>
     </div>
 
     <a-scene

@@ -74,7 +74,7 @@ AFRAME.registerComponent('cursor-listener', {
   init: function () {
     this.el.addEventListener('click', function (evt) {
         document.getElementById("clickStateStatus").innerHTML = evt;
-        openVideo();
+        openMedia('videoScreen');
     });
   }
 });
@@ -84,10 +84,10 @@ function startAR(){
     document.getElementById("startScreen").style.display = 'none';
 }
 
-function openVideo(){
-    document.getElementById("videoScreen").style.display = 'flex';
+function openMedia(id){
+    document.getElementById(id).style.display = 'flex';
 }
 
-function closeVideo(){
-    document.getElementById("videoScreen").style.display = 'none';
+function closeMedia(id){
+    document.getElementById(id).style.display = 'none';
 }
