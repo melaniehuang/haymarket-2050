@@ -1,6 +1,3 @@
-// let currentLat = 0;
-// let currentLong = 0;
-
 window.onload = () => {
     let places = staticLoadPlaces();
     renderPlaces(places);
@@ -9,8 +6,6 @@ window.onload = () => {
     const el = document.querySelector("[gps-new-camera]");
     el.addEventListener("gps-camera-update-position", e => {
         if(!testEntityAdded) {
-            // currentLong = `${e.detail.position.longitude}`;
-            // currentLat = `${e.detail.position.latitude}`;
             document.getElementById("long").innerHTML = `${e.detail.position.longitude}`;
             document.getElementById("lat").innerHTML = `${e.detail.position.latitude}`;
         }
@@ -75,18 +70,13 @@ function renderPlaces(places) {
 AFRAME.registerComponent('cursor-listener', {
   init: function () {
         this.el.addEventListener('click', function (evt) {
-            var elementClicked = evt.target;
-            
-            if (elementClicked.getAttribute('name') == 'position-2'){
-                document.getElementById("videoSrc").src = elementClicked.getAttribute('videoSrc');
-                openMedia('videoScreen');
-            }
-
+            var elementClicked = evt.target;   
+            document.getElementById("videoSrc").src = elementClicked.getAttribute('videoSrc');
+            openMedia('videoScreen');
             document.getElementById("clickStateStatus").innerHTML = elementClicked.getAttribute('name');
         });
     }
 });
-
 
 function startAR(){
     document.getElementById("startScreen").style.display = 'none';
