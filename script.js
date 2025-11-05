@@ -74,6 +74,10 @@ AFRAME.registerComponent('cursor-listener', {
             document.getElementById("clickStateStatus").innerHTML = elementHovered.getAttribute('name');
         });
 
+        this.el.addEventListener('mouseleave', function (evt) {
+            document.getElementById("clickStateStatus").innerHTML = "...";
+        });
+
         this.el.addEventListener('click', function (evt) {
             var elementClicked = evt.target;   
             document.getElementById("videoSrc").src = elementClicked.getAttribute('videoSrc');
