@@ -69,11 +69,15 @@ function renderPlaces(places) {
 
 AFRAME.registerComponent('cursor-listener', {
   init: function () {
+        this.el.addEventListener('mouseenter', function (evt) {
+            var elementHovered = evt.target;
+            document.getElementById("clickStateStatus").innerHTML = elementClicked.getAttribute('name');
+        });
+
         this.el.addEventListener('click', function (evt) {
             var elementClicked = evt.target;   
             document.getElementById("videoSrc").src = elementClicked.getAttribute('videoSrc');
             openMedia('videoScreen');
-            document.getElementById("clickStateStatus").innerHTML = elementClicked.getAttribute('name');
         });
     }
 });
