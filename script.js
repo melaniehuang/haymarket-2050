@@ -71,7 +71,7 @@ AFRAME.registerComponent('cursor-listener', {
   init: function () {
         this.el.addEventListener('mouseenter', function (evt) {
             var elementHovered = evt.target;
-            document.getElementById("clickStateStatus").innerHTML = elementClicked.getAttribute('name');
+            document.getElementById("clickStateStatus").innerHTML = elementHovered.getAttribute('name');
         });
 
         this.el.addEventListener('click', function (evt) {
