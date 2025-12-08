@@ -16,17 +16,29 @@
 </head>
 
 <body>
+    <div id="loading">
+        <div id="loadingP">
+            <p>4A Centre for Contemporary Asian Art acknowledges the Gadigal people, the traditional custodians of the land on which we live, work and create. </p>
+            <p>We recognise the enduring connections between First Nations people and the land, waters, culture and communities that have existed for over 60,000 years. </p>
+            <p>We pay our respects to Elders past and present. Always was, always will be, Aboriginal land.</p>
+            <div class="loaderContainer">
+                <div class="loader"></div>
+            </div>
+            
+        </div>
+    </div>
+
     <div id="ar-frame">
         <img id="frame-top-left" src="./assets/frame/frame-top-left.png">
         <img id="frame-top-right" src="./assets/frame/frame-top-right.png">
         <img id="frame-bottom-left" src="./assets/frame/frame-bottom-left.png">
         <img id="frame-bottom-right" src="./assets/frame/frame-bottom-right.png">
     </div>  
-
+    
     <div id="startScreen">
-        <h1>Haymarket 2050 - Sydney</h1>
-        <button onclick="startAR()">Start</button>
-        <button onclick="openMedia('mapScreen')">View Map</button>
+        <h1>Haymarket 2050</h1>
+        <button onclick="startAR()">Explore the sky</button>
+        <!-- <button onclick="openMedia('mapScreen')">View Map</button> -->
     </div>
 
     <div class="debugInfo">
@@ -41,10 +53,10 @@
         <button onclick="closeMedia('videoScreen')">Close</button>
     </div>
 
-    <div id="mapScreen">
+    <!-- <div id="mapScreen">
         <iframe width='400px' height='600px' src="https://api.mapbox.com/styles/v1/mhuang1/cmhjt6ov500ex01rgdyjl4upa.html?title=false&access_token=pk.eyJ1IjoibWh1YW5nMSIsImEiOiJjajR5MDB4cHExbnJjMnducnp1NGo5b3k2In0.Mlghzw-tZNTl5E9BigSjmA&zoomwheel=false#15.75/-33.881185/151.205298" title="Haymarket" style="border:none;"></iframe>
         <button onclick="closeMedia('mapScreen')">Close</button>
-    </div>
+    </div> -->
 
     <a-scene
         vr-mode-ui="enabled: false"
