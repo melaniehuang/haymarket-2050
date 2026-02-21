@@ -7,16 +7,16 @@ window.onload = () => {
     }
 
     let places = staticLoadPlaces();
-    renderPlaces(places);
+    //renderPlaces(places);
 
-    let testEntityAdded = false;
-    const el = document.querySelector("[gps-new-camera]");
-    el.addEventListener("gps-camera-update-position", e => {
-        if(!testEntityAdded) {
-            document.getElementById("long").innerHTML = `${e.detail.position.longitude}`;
-            document.getElementById("lat").innerHTML = `${e.detail.position.latitude}`;
-        }
-    });
+    // let testEntityAdded = false;
+    // const el = document.querySelector("[gps-new-camera]");
+    // el.addEventListener("gps-camera-update-position", e => {
+    //     if(!testEntityAdded) {
+    //         document.getElementById("long").innerHTML = `${e.detail.position.longitude}`;
+    //         document.getElementById("lat").innerHTML = `${e.detail.position.latitude}`;
+    //     }
+    // });
 };
 
 function getCookie(cname) {
