@@ -70,7 +70,6 @@ function renderPlaces(places) {
         
         let model = document.createElement('a-gltf-model');
         model.setAttribute('gps-new-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
-        //model.setAttribute('src', './assets/magnemite/textures/TCom_Gore_2K_albedo.jpg');
         model.setAttribute('src', './assets/models/MASCOT-2_81kPoly_compressed.glb');
         model.setAttribute('name', place.name);
         model.setAttribute('videoSrc', './assets/video/' + place.name + '.mp4');
