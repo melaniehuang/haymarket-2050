@@ -7,16 +7,16 @@ window.onload = () => {
     }
 
     let places = staticLoadPlaces();
-    //renderPlaces(places);
+    renderPlaces(places);
 
-    // let testEntityAdded = false;
-    // const el = document.querySelector("[gps-new-camera]");
-    // el.addEventListener("gps-camera-update-position", e => {
-    //     if(!testEntityAdded) {
-    //         document.getElementById("long").innerHTML = `${e.detail.position.longitude}`;
-    //         document.getElementById("lat").innerHTML = `${e.detail.position.latitude}`;
-    //     }
-    // });
+    let testEntityAdded = false;
+    const el = document.querySelector("[gps-new-camera]");
+    el.addEventListener("gps-camera-update-position", e => {
+        if(!testEntityAdded) {
+            document.getElementById("long").innerHTML = `${e.detail.position.longitude}`;
+            document.getElementById("lat").innerHTML = `${e.detail.position.latitude}`;
+        }
+    });
 };
 
 function getCookie(cname) {
@@ -68,9 +68,10 @@ function renderPlaces(places) {
         let latitude = place.location.lat;
         let longitude = place.location.lng;
         
-        let model = document.createElement('a-sphere');
+        let model = document.createElement('a-gltf-model');
         model.setAttribute('gps-new-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
-        model.setAttribute('src', './assets/magnemite/textures/TCom_Gore_2K_albedo.jpg');
+        //model.setAttribute('src', './assets/magnemite/textures/TCom_Gore_2K_albedo.jpg');
+        model.setAttribute('src', './assets/models/MASCOT-2_81kPoly_compressed.glb');
         model.setAttribute('name', place.name);
         model.setAttribute('videoSrc', './assets/video/' + place.name + '.mp4');
         model.setAttribute('repeat', '2 2');
