@@ -80,8 +80,8 @@ function renderPlaces(places) {
         model.setAttribute('roughness', '0');
         model.setAttribute('color', place.color);
         model.setAttribute('radius', '2');
-        model.setAttribute('scale', '2 2 2');
-        model.setAttribute('position', '0 10 0');
+        model.setAttribute('scale', '5 5 5');
+        model.setAttribute('position', '0 5 0');
         model.setAttribute('animation', "property: rotation; to: 0 360 0; dur: 8000; easing: linear; loop: true");
         model.setAttribute('cursor-listener','');
         model.addEventListener('loaded', () => {
