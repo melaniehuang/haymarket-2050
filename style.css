@@ -10,7 +10,6 @@ body {
     position: absolute;
     top:0;
     left:0;
-    z-index:100;
 }
 
 #loadingP {
@@ -85,7 +84,29 @@ body {
     background-color: red;
     color: white;
     text-align:center;
-    z-index:2;    
+}
+
+#videoDiv {
+    z-index:2;
+}
+
+#videoSrc{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:100vh;
+}
+
+#videoOptions {
+    position: absolute;
+    bottom:0;
+    z-index:20;
+}
+
+.videoButton {
+    height:50px;
+    width:120px;
+    margin-right:6px;
 }
 
 #mapScreen {
@@ -137,21 +158,26 @@ body {
 }
 
 .debugInfo {
-    position: absolute;
+    color:white;
     text-align: center;
     width:100%;
-    z-index: 2;
-    top:20px;
-    color:white;
 }
 
 #gpsPosition {
-
+    position: absolute;
+    background:#ff0000;
+    z-index: 20;
+    top:12px;
+    width:100%;
 }
 
 #clickState {
+    position: absolute;
+    background:#ff0000;
+    z-index: 20;
+    top:36px;
+    width:100%;
 }
-
 
 button {
     margin-bottom: 24px;

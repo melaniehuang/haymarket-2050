@@ -21,10 +21,11 @@
             <p>4A Centre for Contemporary Asian Art acknowledges the Gadigal people, the traditional custodians of the land on which we live, work and create. </p>
             <p>We recognise the enduring connections between First Nations people and the land, waters, culture and communities that have existed for over 60,000 years. </p>
             <p>We pay our respects to Elders past and present. Always was, always will be, Aboriginal land.</p>
-            <div class="loaderContainer">
+
+            <button onclick="hideAOC()">Enter</button>
+            <!-- <div class="loaderContainer">
                 <div class="loader"></div>
-            </div>
-            
+            </div> -->          
         </div>
     </div>
 
@@ -48,10 +49,17 @@
 
 
     <div id="videoScreen">
-        <div style="padding:177.78% 0 0 0;position:relative;">
-            <iframe id="videoSrc" src="https://player.vimeo.com/video/1167071059?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1" width="1080" height="1920" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="HAYMARKET2050-TEST"></iframe>
+        <div id="videoDiv">
+            <video id="videoSrc" autoplay loop src="https://melhuangbuntine.com/position-0.mp4"></video>
         </div>
-        <button onclick="closeMedia('videoScreen')">Close</button>
+        <!-- <div id="videoDiv">
+            <iframe id="videoSrc" src="https://player.vimeo.com/video/1167071059?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;loop=1" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="HAYMARKET2050-TEST"></iframe>
+        </div> -->
+
+        <div id="videoOptions">
+            <button class="videoButton" onclick="closeMedia('videoScreen')">Collect</button>
+            <button class="videoButton" onclick="closeMedia('videoScreen')">Close</button>
+        </div>
     </div>
 
     <!-- <div id="mapScreen">
@@ -83,4 +91,6 @@
             </a-camera>
         </a-entity>
     </a-scene>
+
+    <script src="https://vjs.zencdn.net/8.23.4/video.min.js"></script>
 </body>

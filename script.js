@@ -39,7 +39,7 @@ function staticLoadPlaces() {
     return [
         {
             name: 'position-1',
-            vsrc: 'https://player.vimeo.com/video/1167071059?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;loop=1',
+            vsrc: 'https://player.vimeo.com/video/1167071059?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;loop=1',
             location: {
                 lat: -37.698789,
                 lng: 145.022965,
@@ -47,7 +47,7 @@ function staticLoadPlaces() {
             color: 'red'
         }, {
             name: 'position-2',
-            vsrc: 'https://player.vimeo.com/video/1167071059?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;loop=1',
+            vsrc: 'https://player.vimeo.com/video/1167071059?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;loop=1',
             location: {
                 lat: -37.698951,
                 lng: 145.023111,
@@ -55,7 +55,7 @@ function staticLoadPlaces() {
             color: 'blue'
         }, {
             name: 'position-3',
-            vsrc: 'https://player.vimeo.com/video/1167071059?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=1&amp;loop=1',
+            vsrc: 'https://player.vimeo.com/video/1167071059?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;loop=1',
             location: {
                 lat: -37.698778,
                 lng: 145.023243,
@@ -108,6 +108,10 @@ AFRAME.registerComponent('cursor-listener', {
         });
     }
 });
+
+function hideAOC(){
+    document.getElementById("loading").style.display = 'none';
+}
 
 function startAR(){
     document.getElementById("startScreen").style.display = 'none';
