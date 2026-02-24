@@ -1,8 +1,10 @@
 window.onload = () => {
     let aoc = getCookie("aoc");
     if (aoc != "") {
+        console.log("new");
         document.getElementById("loading").style.display = 'none';
     } else {
+        console.log("not new");
         document.cookie = "aoc=seen";
     }
 
@@ -110,6 +112,7 @@ AFRAME.registerComponent('cursor-listener', {
 });
 
 function hideAOC(){
+    console.log('cookies detected. aoc hidden.');
     document.getElementById("loading").style.display = 'none';
 }
 
