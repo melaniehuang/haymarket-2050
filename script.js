@@ -1,10 +1,10 @@
 window.onload = () => {
     let aoc = getCookie("aoc");
     if (aoc != "") {
-        console.log("new");
+        console.log("not new");
         document.getElementById("loading").style.display = 'none';
     } else {
-        console.log("not new");
+        console.log("new");
         document.cookie = "aoc=seen";
     }
 

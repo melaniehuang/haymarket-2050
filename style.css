@@ -10,10 +10,12 @@ body {
     position: absolute;
     top:0;
     left:0;
+    z-index:10;
 }
 
 #loadingP {
     padding: 64px;
+    margin-top:64px;
     color:white;
     text-align: center;
     font-size: 24px;
@@ -24,7 +26,6 @@ body {
     place-items: center;
 }
 
-/* HTML: <div class="loader"></div> */
 .loader {
   width: 50px;
   aspect-ratio: 1;
