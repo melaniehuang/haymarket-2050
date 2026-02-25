@@ -46,15 +46,18 @@
         <div id="clickState">Looking at: <span id="clickStateStatus">...</span></div>
     </div>
 
-
     <div id="videoScreen">
         <div id="videoOptions">
-            <button class="videoButton" onclick="closeMedia('videoScreen')">Collect</button>
+            <button class="videoButton" onclick="openMedia('cvScreen')">Collect</button>
             <button class="videoButton" onclick="closeMedia('videoScreen')">Close</button>
         </div>
         <div id="videoDiv">
             <video id="videoSrc" autoplay loop src="https://melhuangbuntine.com/position-0.mp4"></video>
         </div>
+    </div>
+
+    <div id="cvScreen">    
+        <iframe src="https://my.culturevault.com/mint/4Aa4Show/0x25F08ac3aA1E0cDcd70837f28b8FeBE46Fff4939/0/embed?title=Collect%204A%20Character&image=https://cdn.culturevault.com/fa141316fd9500f5a4a1ced8d4f16c38.png" style="width:324px;height:700px;" title="Iframe Example"></iframe>
     </div>
 
     <a-scene
