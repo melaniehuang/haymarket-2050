@@ -22,10 +22,7 @@
             <p>We recognise the enduring connections between First Nations people and the land, waters, culture and communities that have existed for over 60,000 years.</p>
             <p>We pay our respects to Elders past and present. Always was, always will be, Aboriginal land.</p>
 
-            <button onclick="hideAOC()">Enter</button>
-            <!-- <div class="loaderContainer">
-                <div class="loader"></div>
-            </div> -->          
+            <button onclick="hideAOC()">Enter</button>         
         </div>
     </div>
 
@@ -38,7 +35,10 @@
     
     <div id="startScreen">
         <h1>HAYMARKET2050</h1>
-        <button onclick="startAR()">Explore the sky</button>
+        <div id="loaderContainer">
+            <div class="loader"></div>
+        </div> 
+        <button id="enterButton" onclick="startAR()">Explore the sky</button>
     </div>
 
     <div class="debugInfo">
@@ -62,7 +62,7 @@
     </div>
 
     <a-scene
-        vr-mode-ui="enabled: false"
+        xr-mode-ui="enabled: false"
         arjs='sourceType: webcam; videoTexture: true; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'
         >
         <a-assets></a-assets>

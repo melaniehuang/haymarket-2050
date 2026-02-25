@@ -18,10 +18,14 @@ body {
     margin-top:64px;
     color:white;
     text-align: center;
-    font-size: 24px;
+    font-size: 16px;
 }
 
-.loaderContainer{
+#enterButton{
+    display:none;
+}
+
+#loaderContainer{
     display: grid;
     place-items: center;
 }
@@ -100,7 +104,7 @@ body {
 
 #videoOptions {
     position: absolute;
-    top:0;
+    top:80px;
     z-index:20;
 }
 
@@ -118,6 +122,7 @@ body {
     position:absolute;
     width:100vw;
     height:100vh;  
+    background-color: rgba(0,0,0,0.8);
     top:0;
     left:0;
     text-align:center;  
@@ -126,7 +131,8 @@ body {
 
 #cvScreen iframe{
     width:324px;
-    height:700px;
+    height:670px;
+    margin-bottom:24px;
 }
 
 #mapScreen {

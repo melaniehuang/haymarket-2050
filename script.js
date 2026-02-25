@@ -1,10 +1,8 @@
 window.onload = () => {
     let aoc = getCookie("aoc");
     if (aoc != "") {
-        console.log("not new");
         document.getElementById("loading").style.display = 'none';
     } else {
-        console.log("new");
         document.cookie = "aoc=seen";
     }
 
@@ -85,7 +83,9 @@ function renderPlaces(places) {
         model.setAttribute('animation', "property: rotation; to: 0 360 0; dur: 8000; easing: linear; loop: true");
         model.setAttribute('cursor-listener','');
         model.addEventListener('loaded', () => {
-            window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))
+            window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'));
+            document.getElementById("loaderContainer").style.display = 'none';
+            document.getElementById("enterButton").style.display = 'inline';
         });
 
         scene.appendChild(model);
