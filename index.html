@@ -39,7 +39,6 @@
     <div id="startScreen">
         <h1>HAYMARKET2050</h1>
         <button onclick="startAR()">Explore the sky</button>
-        <!-- <button onclick="openMedia('mapScreen')">View Map</button> -->
     </div>
 
     <div class="debugInfo">
@@ -49,19 +48,14 @@
 
 
     <div id="videoScreen">
-        <div id="videoDiv">
-            <video id="videoSrc" autoplay loop src="https://melhuangbuntine.com/position-0.mp4"></video>
-        </div>
-        
         <div id="videoOptions">
             <button class="videoButton" onclick="closeMedia('videoScreen')">Collect</button>
             <button class="videoButton" onclick="closeMedia('videoScreen')">Close</button>
         </div>
+        <div id="videoDiv">
+            <video id="videoSrc" autoplay loop src="https://melhuangbuntine.com/position-0.mp4"></video>
+        </div>
     </div>
-
-    <!-- <div id="mapScreen">
-        <button onclick="closeMedia('mapScreen')">Close</button>
-    </div> -->
 
     <a-scene
         vr-mode-ui="enabled: false"
