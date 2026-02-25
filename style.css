@@ -110,6 +110,25 @@ body {
     margin-right:6px;
 }
 
+#cvScreen{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position:absolute;
+    width:100vw;
+    height:100vh;  
+    top:0;
+    left:0;
+    text-align:center;  
+    z-index: 50;  
+}
+
+#cvScreen iframe{
+    width:324px;
+    height:700px;
+}
+
 #mapScreen {
     display: none;
     align-items: center;
