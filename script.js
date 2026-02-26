@@ -39,7 +39,7 @@ function staticLoadPlaces() {
     return [
         {
             name: 'Mel house',
-            model: './assets/models/GACHAPON_AR_compressed.glb',
+            model: './assets/models/Mascot-Red_ForAR_compressed.glb',
             vsrc: 'https://melhuangbuntine.com/position-0.mp4',
             location: {
                 lat: -37.698789,
@@ -55,7 +55,7 @@ function staticLoadPlaces() {
             }
         }, {
             name: 'Market City',
-            model: './assets/models/GACHAPON_AR_compressed.glb',
+            model: './assets/models/Mascot-Red_ForAR_compressed.glb',
             vsrc: 'https://melhuangbuntine.com/position-2.mp4',
             location: {
                 lat: -33.8796149,
