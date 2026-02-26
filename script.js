@@ -39,7 +39,7 @@ function staticLoadPlaces() {
     return [
         {
             name: 'Mel house',
-            model: './assets/models/Mascot-Black_ForAR_compressed.glb',
+            model: './assets/models/Mascot-Blue_compressed.glb',
             vsrc: 'https://melhuangbuntine.com/position-0.mp4',
             location: {
                 lat: -37.698789,
@@ -71,7 +71,7 @@ function staticLoadPlaces() {
             }
         }, {
             name: 'Ching Yip Cafe',
-            model: './assets/models/GACHAPON_AR_compressed.glb',
+            model: './assets/models/Mascot-Blue_compressed.glb',
             vsrc: 'https://melhuangbuntine.com/position-1.mp4',
             location: {
                 lat: -33.8788058,
