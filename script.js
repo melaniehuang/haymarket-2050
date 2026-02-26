@@ -39,8 +39,9 @@ function staticLoadPlaces() {
     return [
         {
             name: 'Mel house',
-            model: './assets/models/Mascot-Blue_compressed.glb',
+            model: './assets/models/Mascot-White_ForAR_compressed.glb',
             vsrc: 'https://melhuangbuntine.com/position-0.mp4',
+            fsrc: 'https://my.culturevault.com/mint/4Aa4Show/0x25F08ac3aA1E0cDcd70837f28b8FeBE46Fff4939/0/embed?title=Collect%204A%20Character&image=https://cdn.culturevault.com/fa141316fd9500f5a4a1ced8d4f16c38.png',
             location: {
                 lat: -37.698789,
                 lng: 145.022965,
@@ -49,6 +50,7 @@ function staticLoadPlaces() {
             name: '4A Gallery',
             model: './assets/models/GACHAPON_AR_compressed.glb',
             vsrc: 'https://melhuangbuntine.com/position-1.mp4',
+            fsrc: 'https://my.culturevault.com/mint/4Aa4Show/0x25F08ac3aA1E0cDcd70837f28b8FeBE46Fff4939/0/embed?title=Collect%204A%20Character&image=https://cdn.culturevault.com/fa141316fd9500f5a4a1ced8d4f16c38.png',
             location: {
                 lat: -33.8799646,
                 lng: 151.2014678,
@@ -57,6 +59,7 @@ function staticLoadPlaces() {
             name: 'Market City',
             model: './assets/models/Mascot-Red_ForAR_compressed.glb',
             vsrc: 'https://melhuangbuntine.com/position-2.mp4',
+            fsrc: 'https://my.culturevault.com/mint/4Aa4Show/0x25F08ac3aA1E0cDcd70837f28b8FeBE46Fff4939/0/embed?title=Collect%204A%20Character&image=https://cdn.culturevault.com/fa141316fd9500f5a4a1ced8d4f16c38.png',
             location: {
                 lat: -33.8796149,
                 lng: 151.2045894,
@@ -65,6 +68,7 @@ function staticLoadPlaces() {
             name: 'Ceremonial Gate',
             model: './assets/models/Mascot-Black_ForAR_compressed.glb',
             vsrc: 'https://melhuangbuntine.com/position-0.mp4',
+            fsrc: 'https://my.culturevault.com/mint/4Aa4Show/0x25F08ac3aA1E0cDcd70837f28b8FeBE46Fff4939/0/embed?title=Collect%204A%20Character&image=https://cdn.culturevault.com/fa141316fd9500f5a4a1ced8d4f16c38.png',
             location: {
                 lat: -33.8793504,
                 lng: 151.204183,
@@ -73,14 +77,16 @@ function staticLoadPlaces() {
             name: 'Ching Yip Cafe',
             model: './assets/models/Mascot-Blue_compressed.glb',
             vsrc: 'https://melhuangbuntine.com/position-1.mp4',
+            fsrc: 'https://my.culturevault.com/mint/4Aa4Show/0x25F08ac3aA1E0cDcd70837f28b8FeBE46Fff4939/0/embed?title=Collect%204A%20Character&image=https://cdn.culturevault.com/fa141316fd9500f5a4a1ced8d4f16c38.png',
             location: {
                 lat: -33.8788058,
                 lng: 151.2048132,
             }
         }, {
             name: 'Harbour City Twin Cinema',
-            model: './assets/models/GACHAPON_AR_compressed.glb',
+            model: './assets/models/Mascot-White_ForAR_compressed.glb',
             vsrc: 'https://melhuangbuntine.com/position-2.mp4',
+            fsrc: 'https://my.culturevault.com/mint/4Aa4Show/0x25F08ac3aA1E0cDcd70837f28b8FeBE46Fff4939/0/embed?title=Collect%204A%20Character&image=https://cdn.culturevault.com/fa141316fd9500f5a4a1ced8d4f16c38.png',
             location: {
                 lat: -33.8788425,
                 lng: 151.1996007,
@@ -100,6 +106,7 @@ function renderPlaces(places) {
         model.setAttribute('src', place.model);
         model.setAttribute('name', place.name);
         model.setAttribute('videoSrc', place.vsrc);
+        model.setAttribute('frameSrc', place.fsrc);
         model.setAttribute('roughness', '0');
         model.setAttribute('scale', '5 5 5');
         model.setAttribute('position', '0 5 0');
@@ -129,6 +136,7 @@ AFRAME.registerComponent('cursor-listener', {
         this.el.addEventListener('click', function (evt) {
             var elementClicked = evt.target;   
             document.getElementById("videoSrc").src = elementClicked.getAttribute('videoSrc');
+            document.getElementById("frameSrc").src = elementClicked.getAttribute('frameSrc');
             openMedia('videoScreen');
         });
     }
