@@ -38,29 +38,53 @@ function getCookie(cname) {
 function staticLoadPlaces() {
     return [
         {
-            name: 'position-1',
+            name: 'Mel house',
+            model: './assets/models/GACHAPON_AR_compressed.glb',
             vsrc: 'https://melhuangbuntine.com/position-0.mp4',
             location: {
                 lat: -37.698789,
                 lng: 145.022965,
-            },
-            color: 'red'
+            }
         }, {
-            name: 'position-2',
+            name: '4A Gallery',
+            model: './assets/models/GACHAPON_AR_compressed.glb',
             vsrc: 'https://melhuangbuntine.com/position-1.mp4',
             location: {
-                lat: -37.698951,
-                lng: 145.023111,
-            },
-            color: 'blue'
+                lat: -33.8799646,
+                lng: 151.2014678,
+            }
         }, {
-            name: 'position-3',
+            name: 'Market City',
+            model: './assets/models/GACHAPON_AR_compressed.glb',
             vsrc: 'https://melhuangbuntine.com/position-2.mp4',
             location: {
-                lat: -37.698778,
-                lng: 145.023243,
-            },
-            color: 'white'
+                lat: -33.8796149,
+                lng: 151.2045894,
+            }
+        }, {
+            name: 'Ceremonial Gate',
+            model: './assets/models/GACHAPON_AR_compressed.glb',
+            vsrc: 'https://melhuangbuntine.com/position-0.mp4',
+            location: {
+                lat: -33.8793504,
+                lng: 151.204183,
+            }
+        }, {
+            name: 'Ching Yip Cafe',
+            model: './assets/models/GACHAPON_AR_compressed.glb',
+            vsrc: 'https://melhuangbuntine.com/position-1.mp4',
+            location: {
+                lat: -33.8788058,
+                lng: 151.2048132,
+            }
+        }, {
+            name: 'Harbour City Twin Cinema',
+            model: './assets/models/GACHAPON_AR_compressed.glb',
+            vsrc: 'https://melhuangbuntine.com/position-2.mp4',
+            location: {
+                lat: -33.8788425,
+                lng: 151.1996007,
+            }
         }
     ];
 }
@@ -73,11 +97,10 @@ function renderPlaces(places) {
         
         let model = document.createElement('a-gltf-model');
         model.setAttribute('gps-new-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
-        model.setAttribute('src', './assets/models/MASCOT-2_81kPoly_compressed.glb');
+        model.setAttribute('src', place.model);
         model.setAttribute('name', place.name);
         model.setAttribute('videoSrc', place.vsrc);
         model.setAttribute('roughness', '0');
-        model.setAttribute('color', place.color);
         model.setAttribute('scale', '5 5 5');
         model.setAttribute('position', '0 5 0');
         model.setAttribute('animation', "property: rotation; to: 0 360 0; dur: 8000; easing: linear; loop: true");
