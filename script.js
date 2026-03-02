@@ -153,7 +153,7 @@ function startAR(){
 }
 
 function openMedia(id){
-    document.getElementById("de").style.display = 'flex';
+    document.getElementById(id).style.display = 'flex';
     document.getElementById("debugInfo").style.display = 'none';
 }
 
