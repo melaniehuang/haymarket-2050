@@ -152,13 +152,11 @@ button {
 
 #videoOptions {
     position: absolute;
-    top:80px;
+    top:20px;
     z-index:20;
 }
 
 .videoButton {
-    height:50px;
-    width:120px;
     margin-right:6px;
 }
 
