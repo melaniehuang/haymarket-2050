@@ -149,6 +149,7 @@ function hideAOC(){
 
 function startAR(){
     document.getElementById("startScreen").style.display = 'none';
+    document.getElementById("debugInfo").style.display = 'flex';
 }
 
 function openMedia(id){
