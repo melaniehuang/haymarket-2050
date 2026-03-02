@@ -1,7 +1,7 @@
 window.onload = () => {
     let aoc = getCookie("aoc");
     if (aoc != "") {
-        //document.getElementById("loading").style.display = 'none';
+        document.getElementById("loading").style.display = 'none';
     } else {
         document.cookie = "aoc=seen";
     }
@@ -153,9 +153,11 @@ function startAR(){
 }
 
 function openMedia(id){
-    document.getElementById(id).style.display = 'flex';
+    document.getElementById("de").style.display = 'flex';
+    document.getElementById("debugInfo").style.display = 'none';
 }
 
 function closeMedia(id){
     document.getElementById(id).style.display = 'none';
+    document.getElementById("debugInfo").style.display = 'flex';
 }
