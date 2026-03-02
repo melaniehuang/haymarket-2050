@@ -1,6 +1,37 @@
+@font-face {
+  font-family: din;
+  src: url(./assets/D-DINCondensed-Bold.otf);
+}
+
 body {
     margin: 0;
     overflow: hidden;
+    font-family: din;
+    font-size: 18px;
+}
+
+#desktop {
+    display:none;
+    width:100vw;
+    height:100vh;
+    background:black;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:200;
+    color:white;
+    text-align: center;
+    justify-content:center;
+}
+
+@media (min-width: 600px) {
+  #desktop {
+    display:flex;
+  }
+}
+
+#desktop-content {
+    margin-top:45vh;
 }
 
 #loading {
@@ -8,9 +39,14 @@ body {
     height:100vh;
     background:black;
     position: absolute;
-    top:0;
+    top:140px;
     left:0;
     z-index:10;
+}
+
+#loading img{
+  width:93px;
+  height:59px;
 }
 
 #loadingP {
@@ -18,7 +54,17 @@ body {
     margin-top:64px;
     color:white;
     text-align: center;
-    font-size: 16px;
+}
+
+button {
+    font-family: din;
+    text-transform: uppercase;
+    background:whitesmoke;
+    border:none;
+    padding:8px 16px;
+    border-radius: 999px;
+    color:black;
+    font-size: 18px;
 }
 
 #enterButton{

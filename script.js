@@ -1,7 +1,7 @@
 window.onload = () => {
     let aoc = getCookie("aoc");
     if (aoc != "") {
-        document.getElementById("loading").style.display = 'none';
+        //document.getElementById("loading").style.display = 'none';
     } else {
         document.cookie = "aoc=seen";
     }
