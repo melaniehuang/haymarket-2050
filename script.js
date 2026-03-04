@@ -40,56 +40,56 @@ function staticLoadPlaces() {
         {
             name: 'Mel house',
             model: './assets/models/Mascot-White_ForAR_compressed.glb',
-            vsrc: 'https://melhuangbuntine.com/position-0.mp4',
-            fsrc: 'https://my.culturevault.com/mint/4Aa4Show/0x25F08ac3aA1E0cDcd70837f28b8FeBE46Fff4939/0/embed?title=Collect%204A%20Character&image=https://cdn.culturevault.com/fa141316fd9500f5a4a1ced8d4f16c38.png',
+            vsrc: 'https://melhuangbuntine.com/4A-GALLAERY-HAYMARKET-2050_web.mp4',
+            fsrc: 'https://www.culturevault.com/mint/injury/0xc5f6df1bfc815cba5d0c480b02ddd179d46ef702/4/embed?title=Haymarket%202050%20FREEDOM&image=https://cdn.culturevault.com/injury/FREEDOM.jpg',
             location: {
                 lat: -37.698789,
                 lng: 145.022965,
             }
         }, {
-            name: '4A Gallery',
+            name: '4A Gallery: FREEDOM',
             model: './assets/models/GACHAPON_AR_compressed.glb',
-            vsrc: 'https://melhuangbuntine.com/position-1.mp4',
-            fsrc: 'https://my.culturevault.com/mint/4Aa4Show/0x25F08ac3aA1E0cDcd70837f28b8FeBE46Fff4939/0/embed?title=Collect%204A%20Character&image=https://cdn.culturevault.com/fa141316fd9500f5a4a1ced8d4f16c38.png',
+            vsrc: 'https://melhuangbuntine.com/4A-GALLAERY-HAYMARKET-2050_web.mp4',
+            fsrc: 'https://www.culturevault.com/mint/injury/0xc5f6df1bfc815cba5d0c480b02ddd179d46ef702/4/embed?title=Haymarket%202050%20FREEDOM&image=https://cdn.culturevault.com/injury/FREEDOM.jpg',
             location: {
-                lat: -33.8799646,
-                lng: 151.2014678,
+                lat: -37.699390,
+                lng: 145.023442,
             }
         }, {
-            name: 'Market City',
+            name: 'Market City: VITALITY',
             model: './assets/models/Mascot-Red_ForAR_compressed.glb',
-            vsrc: 'https://melhuangbuntine.com/position-2.mp4',
-            fsrc: 'https://my.culturevault.com/mint/4Aa4Show/0x25F08ac3aA1E0cDcd70837f28b8FeBE46Fff4939/0/embed?title=Collect%204A%20Character&image=https://cdn.culturevault.com/fa141316fd9500f5a4a1ced8d4f16c38.png',
+            vsrc: 'https://melhuangbuntine.com/MARKET-CITY-HAYMARKET-2050_web.mp4',
+            fsrc: 'https://www.culturevault.com/mint/injury/0xc5f6df1bfc815cba5d0c480b02ddd179d46ef702/1/embed?title=Haymarket%202050%20VITALITY&image=https://cdn.culturevault.com/injury/VITALITY.png',
             location: {
-                lat: -33.8796149,
-                lng: 151.2045894,
+                lat: -37.69972506490864,
+                lng: 145.0225816899985,
             }
         }, {
-            name: 'Ceremonial Gate',
+            name: 'Ceremonial Gate: GROWTH',
             model: './assets/models/Mascot-Black_ForAR_compressed.glb',
-            vsrc: 'https://melhuangbuntine.com/position-0.mp4',
-            fsrc: 'https://my.culturevault.com/mint/4Aa4Show/0x25F08ac3aA1E0cDcd70837f28b8FeBE46Fff4939/0/embed?title=Collect%204A%20Character&image=https://cdn.culturevault.com/fa141316fd9500f5a4a1ced8d4f16c38.png',
+            vsrc: 'https://melhuangbuntine.com/CREMONIAL-GATE-HAYMARKET-2050_web.mp4',
+            fsrc: 'https://www.culturevault.com/mint/injury/0xc5f6df1bfc815cba5d0c480b02ddd179d46ef702/2/embed?title=Haymarket%202050%20GROWTH&image=https://cdn.culturevault.com/injury/GROWTH.png',
             location: {
-                lat: -33.8793504,
-                lng: 151.204183,
+                lat: -37.70072734077935,
+                lng: 145.01980278512124,
             }
         }, {
-            name: 'Ching Yip Cafe',
+            name: 'Ching Yip Cafe: NATURE',
             model: './assets/models/Mascot-Blue_compressed.glb',
-            vsrc: 'https://melhuangbuntine.com/position-1.mp4',
-            fsrc: 'https://my.culturevault.com/mint/4Aa4Show/0x25F08ac3aA1E0cDcd70837f28b8FeBE46Fff4939/0/embed?title=Collect%204A%20Character&image=https://cdn.culturevault.com/fa141316fd9500f5a4a1ced8d4f16c38.png',
+            vsrc: 'https://melhuangbuntine.com/CHINGYIPCAFE-HAYMARKET-2050_web.mp4',
+            fsrc: 'https://www.culturevault.com/mint/injury/0xc5f6df1bfc815cba5d0c480b02ddd179d46ef702/0/embed?title=Haymarket%202050%20NATURE&image=https://cdn.culturevault.com/injury/NATURE.png',
             location: {
-                lat: -33.8788058,
-                lng: 151.2048132,
+                lat: -37.70062730876072,
+                lng: 145.0204274794594,
             }
         }, {
-            name: 'Harbour City Twin Cinema',
+            name: 'Harbour City Twin Cinema: STARLIGHT',
             model: './assets/models/Mascot-White_ForAR_compressed.glb',
-            vsrc: 'https://melhuangbuntine.com/position-2.mp4',
-            fsrc: 'https://my.culturevault.com/mint/4Aa4Show/0x25F08ac3aA1E0cDcd70837f28b8FeBE46Fff4939/0/embed?title=Collect%204A%20Character&image=https://cdn.culturevault.com/fa141316fd9500f5a4a1ced8d4f16c38.png',
+            vsrc: 'https://melhuangbuntine.com/CINEMA-HAYMARKET-2050_web.mp4',
+            fsrc: 'https://www.culturevault.com/mint/injury/0xc5f6df1bfc815cba5d0c480b02ddd179d46ef702/3/embed?title=Haymarket%202050%20STARLIGHT&image=https://cdn.culturevault.com/injury/STARLIGHT.png',
             location: {
-                lat: -33.8788425,
-                lng: 151.1996007,
+                lat: -37.70112550114784,
+                lng: 145.0198746738897,
             }
         }
     ];
