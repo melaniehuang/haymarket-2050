@@ -52,8 +52,8 @@ function staticLoadPlaces() {
             vsrc: 'https://melhuangbuntine.com/4A-GALLAERY-HAYMARKET-2050_web.mp4',
             fsrc: 'https://www.culturevault.com/mint/injury/0xc5f6df1bfc815cba5d0c480b02ddd179d46ef702/4/embed?title=Haymarket%202050%20FREEDOM&image=https://cdn.culturevault.com/injury/FREEDOM.jpg',
             location: {
-                lat: -37.699390,
-                lng: 145.023442,
+                lat: -33.8799646,
+                lng: 151.2014678,
             }
         }, {
             name: 'Market City: VITALITY',
@@ -61,8 +61,8 @@ function staticLoadPlaces() {
             vsrc: 'https://melhuangbuntine.com/MARKET-CITY-HAYMARKET-2050_web.mp4',
             fsrc: 'https://www.culturevault.com/mint/injury/0xc5f6df1bfc815cba5d0c480b02ddd179d46ef702/1/embed?title=Haymarket%202050%20VITALITY&image=https://cdn.culturevault.com/injury/VITALITY.png',
             location: {
-                lat: -37.69972506490864,
-                lng: 145.0225816899985,
+                lat: -33.8796149,
+                lng: 151.2045894,
             }
         }, {
             name: 'Ceremonial Gate: GROWTH',
@@ -70,8 +70,8 @@ function staticLoadPlaces() {
             vsrc: 'https://melhuangbuntine.com/CREMONIAL-GATE-HAYMARKET-2050_web.mp4',
             fsrc: 'https://www.culturevault.com/mint/injury/0xc5f6df1bfc815cba5d0c480b02ddd179d46ef702/2/embed?title=Haymarket%202050%20GROWTH&image=https://cdn.culturevault.com/injury/GROWTH.png',
             location: {
-                lat: -37.70072734077935,
-                lng: 145.01980278512124,
+                lat: -33.8793504,
+                lng: 151.204183,
             }
         }, {
             name: 'Ching Yip Cafe: NATURE',
@@ -79,8 +79,8 @@ function staticLoadPlaces() {
             vsrc: 'https://melhuangbuntine.com/CHINGYIPCAFE-HAYMARKET-2050_web.mp4',
             fsrc: 'https://www.culturevault.com/mint/injury/0xc5f6df1bfc815cba5d0c480b02ddd179d46ef702/0/embed?title=Haymarket%202050%20NATURE&image=https://cdn.culturevault.com/injury/NATURE.png',
             location: {
-                lat: -37.70062730876072,
-                lng: 145.0204274794594,
+                lat: -33.8788058,
+                lng: 151.2048132,
             }
         }, {
             name: 'Harbour City Twin Cinema: STARLIGHT',
@@ -88,8 +88,8 @@ function staticLoadPlaces() {
             vsrc: 'https://melhuangbuntine.com/CINEMA-HAYMARKET-2050_web.mp4',
             fsrc: 'https://www.culturevault.com/mint/injury/0xc5f6df1bfc815cba5d0c480b02ddd179d46ef702/3/embed?title=Haymarket%202050%20STARLIGHT&image=https://cdn.culturevault.com/injury/STARLIGHT.png',
             location: {
-                lat: -37.70112550114784,
-                lng: 145.0198746738897,
+                lat: -33.8788425,
+                lng: 151.1996007,
             }
         }
     ];
@@ -154,10 +154,19 @@ function startAR(){
 
 function openMedia(id){
     document.getElementById(id).style.display = 'flex';
+    if (id == "videoScreen"){
+        let vid = document.getElementById("videoSrc");
+        vid.currentTime = 0;
+        vid.play();
+    }  
     document.getElementById("debugInfo").style.display = 'none';
 }
 
 function closeMedia(id){
     document.getElementById(id).style.display = 'none';
-    document.getElementById("debugInfo").style.display = 'flex';
+    if (id == "videoScreen"){
+        let vid = document.getElementById("videoSrc");
+        vid.pause();
+        document.getElementById("debugInfo").style.display = 'flex';
+    }  
 }

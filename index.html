@@ -48,7 +48,7 @@
         </div> 
         <button id="enterButton" onclick="startAR()">Explore the sky</button>
     </div>
-
+    
     <div id="debugInfo">
         <div id="debugContainer">
             <div id="clickState">Looking at: <span id="clickStateStatus">...</span></div>
@@ -62,7 +62,7 @@
             <button class="videoButton" onclick="closeMedia('videoScreen')">Close</button>
         </div>
         <div id="videoDiv">
-            <video id="videoSrc" autoplay loop src="https://melhuangbuntine.com/position-0.mp4"></video>
+            <video id="videoSrc" loop src="https://melhuangbuntine.com/4A-GALLAERY-HAYMARKET-2050_web.mp4"></video>
         </div>
     </div>
 
@@ -71,12 +71,18 @@
         <iframe id="frameSrc" src="https://my.culturevault.com/mint/4Aa4Show/0x25F08ac3aA1E0cDcd70837f28b8FeBE46Fff4939/0/embed?title=Collect%204A%20Character&image=https://cdn.culturevault.com/fa141316fd9500f5a4a1ced8d4f16c38.png"></iframe>
     </div>
 
+    <div id="mapScreen">
+        <button class="videoButton" onclick="closeMedia('mapScreen')">Close</button>
+        <iframe src="https://snazzymaps.com/embed/776605" width="90%" height="80%" style="border:none;"></iframe>
+    </div>
+
+    
+    
     <a-scene
         xr-mode-ui="enabled: false"
         arjs='sourceType: webcam; videoTexture: true; sourceWidth:1280; sourceHeight:960; displayWidth: 1280; displayHeight: 960; debugUIEnabled: false;'
         >
         <a-assets></a-assets>
-        
         <a-entity position="0 0 0">
             <a-camera far="30" arjs-device-orientation-controls='smoothingFactor: 0.1' look-controls-enabled='false' gps-new-camera='gpsTimeInterval: 3000; gpsMinDistance: 5' rotation-reader mouse-cursor wasd-controls>
                 <a-entity 
@@ -91,4 +97,8 @@
             </a-camera>
         </a-entity>
     </a-scene>
+
+    <div id="mapControls">
+        <button class="videoButton" onclick="openMedia('mapScreen')">Map</button>
+    </div>
 </body>
