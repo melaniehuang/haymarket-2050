@@ -155,6 +155,7 @@ function startAR(){
 
 function openMedia(id){
     document.getElementById(id).style.display = 'flex';
+    document.getElementById('mapControls').style.display = 'none';
     if (id == "videoScreen"){
         let vid = document.getElementById("videoSrc");
         vid.currentTime = 0;
@@ -169,5 +170,6 @@ function closeMedia(id){
         let vid = document.getElementById("videoSrc");
         vid.pause();
         document.getElementById("debugInfo").style.display = 'flex';
+        document.getElementById('mapControls').style.display = 'flex';
     }  
 }
