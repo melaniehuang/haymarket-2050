@@ -61,6 +61,7 @@
             <button class="videoButton" onclick="openMedia('cvScreen')">Collect</button>
             <button class="videoButton" onclick="closeMedia('videoScreen')">Close</button>
         </div>
+        <div id="soundon">SOUND ON</div>
         <div id="videoDiv">
             <video id="videoSrc" loop src="https://melhuangbuntine.com/4A-GALLAERY-HAYMARKET-2050_web.mp4"></video>
         </div>
@@ -84,7 +85,7 @@
         >
         <a-assets></a-assets>
         <a-entity light="type: ambient; color: #BBB"></a-entity>
-        <a-entity light="type: directional; color: #FFF; intensity: 5" position="-0.5 1 1"></a-entity>
+        <a-entity light="type: directional; color: #FFF; intensity: 6" position="-0.5 1 1"></a-entity>
         <a-entity position="0 0 0">
             <a-camera far="30" arjs-device-orientation-controls='smoothingFactor: 0.1' look-controls-enabled='false' gps-new-camera='gpsTimeInterval: 3000; gpsMinDistance: 5' rotation-reader mouse-cursor wasd-controls>
                 <a-entity 

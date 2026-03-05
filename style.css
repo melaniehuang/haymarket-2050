@@ -148,6 +148,13 @@ button {
     text-align:center;
 }
 
+#soundon{
+    color:white;
+    position:absolute;
+    bottom:40px;
+    z-index: 10;
+}
+
 #videoDiv {
     z-index:2;
 }
