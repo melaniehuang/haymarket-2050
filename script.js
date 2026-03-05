@@ -111,7 +111,6 @@ function renderPlaces(places) {
         model.setAttribute('scale', '5 5 5');
         model.setAttribute('position', '0 4 0');
         model.setAttribute('metalness', '1');
-        model.setAttribute('lighting', 'type: point; intensity: 10.0');
         model.setAttribute('animation', "property: rotation; to: 0 360 0; dur: 8000; easing: linear; loop: true");
         model.setAttribute('cursor-listener','');
         model.addEventListener('loaded', () => {
