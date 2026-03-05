@@ -149,10 +149,13 @@ button {
 }
 
 #soundon{
+    display:none;
+    text-align: center;
+    width:100vw;
     color:white;
     position:absolute;
-    bottom:60px;
-    z-index: 20;
+    bottom:40px;
+    z-index: 20;    
 }
 
 #videoDiv {

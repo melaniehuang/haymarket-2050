@@ -160,6 +160,7 @@ function openMedia(id){
         let vid = document.getElementById("videoSrc");
         vid.currentTime = 0;
         vid.play();
+        document.getElementById("soundon").style.display = 'inline';
     }  
     document.getElementById("debugInfo").style.display = 'none';
 }
@@ -171,6 +172,7 @@ function closeMedia(id){
         vid.pause();
         document.getElementById("debugInfo").style.display = 'flex';
         document.getElementById('mapControls').style.display = 'flex';
+        document.getElementById("soundon").style.display = 'none';
     }  
     if (id == 'mapScreen'){
         document.getElementById("debugInfo").style.display = 'flex';
