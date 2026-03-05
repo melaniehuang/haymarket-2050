@@ -39,7 +39,7 @@ function staticLoadPlaces() {
     return [
         {
             name: 'Mel house',
-            model: './assets/models/Mascot-Red_ForAR_compressed.glb',
+            model: './assets/models/Mascot-Blue_compressed.glb',
             vsrc: 'https://melhuangbuntine.com/4A-GALLAERY-HAYMARKET-2050_web.mp4',
             fsrc: 'https://www.culturevault.com/mint/injury/0xc5f6df1bfc815cba5d0c480b02ddd179d46ef702/4/embed?title=Haymarket%202050%20FREEDOM&image=https://cdn.culturevault.com/injury/FREEDOM.jpg',
             location: {
