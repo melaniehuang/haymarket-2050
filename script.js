@@ -39,7 +39,7 @@ function staticLoadPlaces() {
     return [
         {
             name: 'Mel house',
-            model: './assets/models/Mascot-White_ForAR_compressed.glb',
+            model: './assets/models/GACHAPON_AR_compressed.glb',
             vsrc: 'https://melhuangbuntine.com/4A-GALLAERY-HAYMARKET-2050_web.mp4',
             fsrc: 'https://www.culturevault.com/mint/injury/0xc5f6df1bfc815cba5d0c480b02ddd179d46ef702/4/embed?title=Haymarket%202050%20FREEDOM&image=https://cdn.culturevault.com/injury/FREEDOM.jpg',
             location: {
@@ -110,6 +110,7 @@ function renderPlaces(places) {
         model.setAttribute('roughness', '0');
         model.setAttribute('scale', '5 5 5');
         model.setAttribute('position', '0 4 0');
+        model.setAttribute('metalness', '1');
         model.setAttribute('lighting', 'type: point; intensity: 10.0');
         model.setAttribute('animation', "property: rotation; to: 0 360 0; dur: 8000; easing: linear; loop: true");
         model.setAttribute('cursor-listener','');
