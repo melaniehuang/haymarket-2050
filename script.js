@@ -79,8 +79,8 @@ function staticLoadPlaces() {
             vsrc: 'https://melhuangbuntine.com/CHINGYIPCAFE-HAYMARKET-2050_web.mp4',
             fsrc: 'https://www.culturevault.com/mint/injury/0xc5f6df1bfc815cba5d0c480b02ddd179d46ef702/0/embed?title=Haymarket%202050%20NATURE&image=https://cdn.culturevault.com/injury/NATURE.png',
             location: {
-                lat: -33.87880314008585,
-                lng: 151.2048506112996,
+                lat: -33.87882590685007,
+                lng: 151.20412094461548,
             }
         }, {
             name: 'Harbour City Twin Cinema: STARLIGHT',
