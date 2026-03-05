@@ -172,4 +172,7 @@ function closeMedia(id){
         document.getElementById("debugInfo").style.display = 'flex';
         document.getElementById('mapControls').style.display = 'flex';
     }  
+    if (id == 'mapScreen'){
+        document.getElementById('mapControls').style.display = 'flex';
+    }
 }
