@@ -108,8 +108,8 @@ function renderPlaces(places) {
         model.setAttribute('videoSrc', place.vsrc);
         model.setAttribute('frameSrc', place.fsrc);
         model.setAttribute('roughness', '0');
-        model.setAttribute('scale', '5 5 5');
-        model.setAttribute('position', '0 5 0');
+        model.setAttribute('scale', '4 4 4');
+        model.setAttribute('position', '0 4 0');
         model.setAttribute('animation', "property: rotation; to: 0 360 0; dur: 8000; easing: linear; loop: true");
         model.setAttribute('cursor-listener','');
         model.addEventListener('loaded', () => {
